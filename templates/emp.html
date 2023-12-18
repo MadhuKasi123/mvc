@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        margin: 100px;
+    }
+    table{
+        background: linear-gradient(90deg,blue,green,red);
+        color: black;
+    }
+</style>
+<body>
+    <center>
+        <h1>Display Dept Details</h1>
+        <table border="5px">
+            <tr>
+                <th>Ename</th>
+                <th>Eid</th>
+                <th>DeptNo</th>
+                <th>sal</th>
+            </tr>
+            {% for to in name %}
+            <tr>
+               <td>  {{to.Ename}}</td>
+               <td>  {{to.Eid}}</td>
+               <td>  {{to.DeptNo}}</td>
+
+               <td>  {{to.Sal}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        margin: 100px;
+    }
+    table{
+        background: linear-gradient(90deg,blue,green,red);
+        color: black;
+    }
+</style>
+<body>
+    <center>
+        <h1>Display Dept Details</h1>
+        <table border="=5px">
+            <tr>
+                <th>DeptNo</th>
+                <th>Dname</th>
+                <th>Loction</th>
+            </tr>
+            {% for to in dept %}
+            <tr>
+               <td>  {{to.DeptNo}}</td>
+               <td>  {{to.Dname}}</td>
+               <td>  {{to.Loction}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
